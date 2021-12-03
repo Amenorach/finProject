@@ -1,0 +1,132 @@
+    /* Master Styles */
+    
+    body {
+        font-family: "Lato", Arial;
+        margin: 0px;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* Navgation Styles */
+    
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .left_side {
+        display: flex;
+    }
+    
+    .right_side {
+        display: flex;
+    }
+    
+    .navigation>.left_side>div {
+        margin-right: 20px;
+        font-size: 0.9em;
+        text-transform: capitalize;
+    }
+    
+    .navigation_link_wrapper {
+        height: 22px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.85s;
+    }
+    
+    .navigation_link_wrapper a {
+        color: #8a8a8a;
+        text-decoration: none;
+        transition: color 0.85s;
+    }
+    
+    .navigation_link_wrapper :hover {
+        border-bottom: 1px solid black;
+    }
+    
+    .navigation_link_wrapper a :hover {
+        color: black;
+    }
+    
+    .active_navigation_link {
+        border-bottom: 1px solid black;
+    }
+    
+    .active_navigation_link a {
+        color: black !important;
+    }
+    /* Portfolio Styles */
+    
+    .portfolio_items_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* Three columns with each having a full sized column*/
+    }
+    
+    .portfolio_item_wrapper {
+        position: relative;
+    }
+    
+    .portfolio_img_background {
+        height: 350px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .img_txt_wrapper {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .logo_wrapper img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .img_txt_wrapper .subtitle {
+        transition: 1s;
+        font-weight: 600;
+        color: transparent;
+    }
+    
+    .img_txt_wrapper :hover .subtitle {
+        font-weight: 650;
+        color: lightseagreen;
+    }
+    
+    .img_darken {
+        transition: 1s;
+        filter: brightness(10%);
+    }
+    /* About page*/
+    
+    .two_column_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .profile_image img {
+        width: 100%;
+        height: 770px;
+    }
+    
+    .profile_content {
+        padding: 30px;
+    }
+    
+    .profile_content h1 {
+        color: lightseagreen;
+    }
